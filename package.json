@@ -1,0 +1,19 @@
+{
+  "name": "type-challenges-memo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "fmt": "prettier --write solutions/*.ts"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "none",
+    "arrowParens": "avoid"
+  },
+  "devDependencies": {
+    "@type-challenges/utils": "^0.1.1",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  }
+}
