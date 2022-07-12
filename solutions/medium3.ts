@@ -41,9 +41,8 @@ type AnyOf1<T extends readonly any[]> = T[number] extends
  * https://github.com/type-challenges/type-challenges/blob/main/questions/01042-medium-isnever/README.md
  * ×
  */
-type IsNever<T> = [T] extends [never] ? true : false;
-// Another Solutions
-type IsNever1<T> = Record<string, T> extends { [k: string]: never }
+type IsNever1<T> = [T] extends [never] ? true : false;
+type IsNever2<T> = Record<string, T> extends { [k: string]: never }
   ? true
   : false;
 
